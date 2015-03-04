@@ -1,4 +1,47 @@
  <h1>Willoughby's</h1>
+<div>
+<div id="auction-image-carousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#auction-image-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#auction-image-carousel" data-slide-to="1"></li>
+    <li data-target="#auction-image-carousel" data-slide-to="2"></li>
+  </ol>
+</div>
+
+<div class="carousel-inner">
+  <div class="active item">
+      {{#link-to 'lots'}}<img class="img-carousel" src="img/kennedy1.jpg">{{/link-to}}
+    <div class="carousel-caption">
+      {{#link-to 'lots'}}<h2>Jacqueline Kennedy</h2>
+      <h4>An American Icon</h4>{{/link-to}}
+    </div>
+  </div>
+  <div class="item">
+      {{#link-to 'lots'}}<img class="img-carousel" src="img/kennedy2.jpg">{{/link-to}}
+    <div class="carousel-caption">
+      {{#link-to 'lots'}}<h2>Jacqueline Kennedy</h2>
+      <h4>An American Icon</h4>{{/link-to}}
+    </div>
+  </div>
+  <div class="item">
+      {{#link-to 'lots'}}<img class="img-carousel" src="img/kennedy3.png">{{/link-to}}
+    <div class="carousel-caption">
+      {{#link-to 'lots'}}<h2>Jacqueline Kennedy</h2>
+      <h4>An American Icon</h4>{{/link-to}}
+    </div>
+  </div>
+</div>
+
+<a class="carousel-control left" href="#auction-image-carousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+
+<a class="carousel-control right" href="#auction-image-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+<hr>
+
  <form class="form" role="form">
     <div class="form-group">
         <label for="name">Lot Name</label>
@@ -10,6 +53,6 @@
 
 <ul>
   {{#each}}
-    <li>{{#link-to 'lot' lot}}{{lot}}{{name}}{{id}}{{/link-to}}</li>
+    <li>{{#link-to 'lot' this.id}}{{lot}}{{name}}{{id}}{{/link-to}}</li>
   {{/each}}
 </ul>

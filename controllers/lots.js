@@ -7,6 +7,7 @@ Auctioneer.LotsController = Ember.ArrayController.extend({
 // debugger;
       newLot.save();
       // this.transitionToRoute('lots');
+      debugger;
     }
   }
 });

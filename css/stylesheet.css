@@ -1,0 +1,75 @@
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel-inner a {
+  color: #D5FF00;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.fa, #welcome a {
+  color: #FE6193;
+}
+
+.img-article {
+  max-width: 75%;
+  height: auto;
+}
+
+.img-carousel {
+  position: fixed;
+  top: -100px;
+  min-width: 100%;
+  height: auto;
+}
+
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px !important;
+}
+
+.navbar-brand {
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  padding: 0 0 0 10px;
+  font: 42px/normal 'Lobster', cursive;
+  text-shadow: 2px 0 0 rgba(0, 0, 0, 0.5),
+               3px 0 0 rgba(217, 31, 38, 1),
+               4px 0 0 rgba(226, 91, 14, 1),
+               5px 0 0 rgba(245, 221, 8, 1),
+               6px 0 0 rgba(5, 148, 68, 1),
+               7px 0 0 rgba(2, 135, 206, 1),
+               8px 0 0 rgba(4, 77, 145, 1),
+               9px 0 0 rgba(42, 21, 113, 1);
+}
+
+.navbar-right {
+  margin-right: 0px;
+}
+
+#article-image-carousel, .navbar {
+  margin: 0;
+  padding: 0;
+}
+
+#brand-heading {
+  color: #D5FF00;
+}
+
+#brand-heading:hover {
+  color: #F0A0BA;
+}
+
+#navbar-collapse-1 {
+  margin-top: 5px;
+}
+
+#welcome {
+  margin-top: 25px;
+  text-align: center;
+}
