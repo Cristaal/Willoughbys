@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Willoughby's</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" charset="utf-8">
+
+    <script src="lib/jquery-1.11.2.js"></script>
+    <script src="lib/ember-template-compiler-1.10.0.js"></script>
+    <script src="lib/ember-1.10.0.debug.js"></script>
+    <script src="lib/ember-data.js"></script>
+    <script src="lib/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="lib/localstorage_adapter.js"></script>
+
+    <script src="auctioneer.js"></script>
+    <script src="router.js"></script>
+    <script src="store.js"></script>
+
+    <script src="controllers/lots.js"></script>
+
+    <script src="routes/lots.js"></script>
+
+
+    <script src="models/lot.js"></script>
+    <script src="models/lots.js"></script>
+
+    <script>
+      EmberHandlebarsLoader.loadTemplates([
+        'application', 'lots', 'lot'
+      ]);
+      </script>
+  </head>
+  <body>
+
+  </body>
+</html>

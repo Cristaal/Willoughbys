@@ -1,0 +1,20 @@
+ <h1>Willoughby's</h1>
+ <form class="form" role="form">
+    <div class="form-group">
+        <label for="name">Lot Name</label>
+        {{input id="name" class="form-control" value=name}}
+    </div>
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+ </form>
+
+<ul>
+  {{#each item in controller}}
+    <li>{{item.name}}{{item.id}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each}}
+    <li>{{lot}}{{name}}{{id}}</li>
+  {{/each}}
+</ul>

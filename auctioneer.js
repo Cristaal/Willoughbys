@@ -1,0 +1,1 @@
+Auctioneer = Ember.Application.create();
