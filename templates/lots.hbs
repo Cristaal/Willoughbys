@@ -7,14 +7,9 @@
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
  </form>
 
-<ul>
-  {{#each item in controller}}
-    <li>{{item.name}}{{item.id}}</li>
-  {{/each}}
-</ul>
 
 <ul>
   {{#each}}
-    <li>{{lot}}{{name}}{{id}}</li>
+    <li>{{#link-to 'lot' lot}}{{lot}}{{name}}{{id}}{{/link-to}}</li>
   {{/each}}
 </ul>
