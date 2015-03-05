@@ -30,8 +30,6 @@
   <li>Name: {{item.artifactName}}</li>
   <li>Owner: {{item.owner}}</li>
   <li>Starting Bid: {{item.startingBid}}</li>
-  <li>{{item.artifactImage}}</li>
+  <li><img {{bind-attr src="item.artifactImage" alt="an image of the auction item"}}></li>
 </ul>
 {{/each}}
-
-<!-- <img {{bind-attr src="item.artifactImage" alt="an image of the auction item"}} -->
