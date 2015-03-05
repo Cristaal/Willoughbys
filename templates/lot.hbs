@@ -1,7 +1,7 @@
 <h1>{{name}}</h1>
-<button class="btn btn-xs btn-danger" {{action 'delete'}}>Delete</button>
 
 <h4>Add an item to this lot</h4>
+{{#if isEditing}}
 <form>
   <div class="form-group">
     <label for="artifact-name">Name</label>
@@ -24,6 +24,9 @@
   </div>
   <button name="btn btn-primary" {{action 'save'}}>Submit</button>
 </form>
+{{else}}
+<button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+{{/if}}
 
 {{#each item in items itemController="lot"}}
 
@@ -42,6 +45,7 @@
    </li>
   </ul>
 
-    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+
+<button class="btn btn-xs btn-danger" {{action 'delete'}}>Delete</button>
 
 {{/each}}
