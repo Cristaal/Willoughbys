@@ -27,6 +27,11 @@
 
 {{#each item in items itemController="lot"}}
 <ul>
-  <li>{{item.artifactName}} {{item.owner}} {{item.startingBid}} {{item.artifactImage}}</li>
+  <li>Name: {{item.artifactName}}</li>
+  <li>Owner: {{item.owner}}</li>
+  <li>Starting Bid: {{item.startingBid}}</li>
+  <li>{{item.artifactImage}}</li>
 </ul>
 {{/each}}
+
+<!-- <img {{bind-attr src="item.artifactImage" alt="an image of the auction item"}} -->
