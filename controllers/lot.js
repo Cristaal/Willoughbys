@@ -1,6 +1,10 @@
 Auctioneer.LotController = Ember.ObjectController.extend({
   needs: ['lot'],
+  isEditing: false,
   actions: {
+    edit: function() {
+      this.set('isEditing', true);
+    },
     save: function() {
       var item = this.store.createRecord('item', {
         artifactName: this.get('artifact-name'),

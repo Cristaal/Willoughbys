@@ -26,10 +26,22 @@
 </form>
 
 {{#each item in items itemController="lot"}}
-<ul>
-  <li>Name: {{item.artifactName}}</li>
-  <li>Owner: {{item.owner}}</li>
-  <li>Starting Bid: {{item.startingBid}}</li>
-  <li><img {{bind-attr src="item.artifactImage" alt="an image of the auction item"}}></li>
-</ul>
+
+  <ul class="list-unstyled">
+    <li class="list-item">
+      <div class="row">
+        <div class="col-xs-2">
+          <img {{bind-attr src="item.artifactImage" alt="an image of the auction item"}}>
+        </div>
+        <div class="col-xs-10">
+          Name: {{item.artifactName}}
+          Owner: {{item.owner}}
+          Starting Bid: {{item.startingBid}}
+       </div>
+     </div>
+   </li>
+  </ul>
+
+    <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+
 {{/each}}
