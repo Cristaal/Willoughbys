@@ -10,8 +10,10 @@ Auctioneer.LotController = Ember.ObjectController.extend({
       });
       item.save();
 
-      // var self = this;
-      // self.set('artifact-name', 'owner', 'starting-bid', 'artifact-image', '');
+      this.set('artifact-name', '');
+      this.set('owner', '');
+      this.set('starting-bid', '');
+      this.set('artifact-image', '');
 
       var lot = this.get('controllers.lot.model');
       lot.get('items').pushObject(item);
