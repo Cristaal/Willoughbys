@@ -25,10 +25,11 @@
   <button name="btn btn-primary" {{action 'save'}}>Submit</button>
 </form>
 {{else}}
+  <!-- <p>{{item.artifactName}}{{item.owner}}{{item.startingBid}}</p> -->
 <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
 {{/if}}
 
-{{#each item in items itemController="item"}}
+{{#each item in items itemController="change-bid"}}{{item.startingBid}}
 
   <ul class="list-unstyled">
     <li class="list-item">
@@ -38,7 +39,9 @@
         </div>
         <div class="col-xs-10">
           Name: {{item.artifactName}}
+          <br>
           Owner: {{item.owner}}
+          <br>
           Starting Bid: {{item.startingBid}}
        </div>
      </div>
