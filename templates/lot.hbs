@@ -25,8 +25,10 @@
   <button name="btn btn-primary" {{action 'save'}}>Submit</button>
 </form>
 {{else}}
+<br>
   <!-- <p>{{item.artifactName}}{{item.owner}}{{item.startingBid}}</p> -->
 <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+<br>
 {{/if}}
 
 {{#each item in items itemController="change-bid"}}{{item.startingBid}}
@@ -43,6 +45,7 @@
           Owner: {{item.owner}}
           <br>
           Starting Bid: {{item.startingBid}}
+          <br>
        </div>
      </div>
    </li>
